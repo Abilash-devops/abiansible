@@ -1,7 +1,7 @@
 - name : This playbook is to call the varibales from all 
   hosts: mongodb
-  vars:
-    name: abilash_play
+  # vars:
+  #   name: abilash_play
   vars_files:
   - variables.yaml
   vars_prompt:
