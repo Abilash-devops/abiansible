@@ -1,0 +1,17 @@
+- name: Testing all variables
+  hosts: mongodb
+  vars:
+    name: abilash_playbook
+  vars_files:
+  - variables.yaml
+  vars_prompt:
+  - name: name
+    prompt: what is your name?
+    private: true
+  tasks:
+  - name: calling vars from task
+    vars:
+      name: abilash_task
+  - name: Output of the variable file is
+    ansible.builtin.debug:
+      msg: "Output : {{name}}"
