@@ -1,19 +1,17 @@
-- name: Testing all variables
+- name : This playbook is to call the varibales from all 
   hosts: mongodb
   vars:
-    name: abilash_playbook
+    name: abilash_play
   vars_files:
   - variables.yaml
   vars_prompt:
   - name: name
-    prompt: what is your name?
-    private: true
-  tasks:
-  - name: calling vars from task
-    vars: 
+    prompt: What is your input?
+    private: false
+  tasks: 
+  - name: This task is to call the varaibles
+    vars:
       name: abilash_task
-      
-  - name: Output of the variable file is 
+  - name: This is for Output    
     ansible.builtin.debug:
-      msg: "Output : {{name}}"
-  
+      msg: "name is : {{name}}"
