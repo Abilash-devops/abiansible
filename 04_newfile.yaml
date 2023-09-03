@@ -7,7 +7,7 @@
   vars_prompt:
   - name: name
     prompt: what is your name?
-    private: true
+    private: false
   tasks:
   - name: calling vars from task
     vars:
