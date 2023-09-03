@@ -1,5 +1,5 @@
 - name: Variables from files
-  hosts: mongodb.abilashhareendran.in
+  hosts: localhost
   vars_files:
     - variables.yaml
   tasks:
