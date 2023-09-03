@@ -1,4 +1,4 @@
-- name : simple loop
+- name: simple loop
   hosts: localhost
   tasks:
     - name: print country names
