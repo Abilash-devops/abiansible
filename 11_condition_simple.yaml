@@ -6,4 +6,4 @@
   - name: Print my name
     ansible.builtin.debug:
       msg: "Hello {{NAME}}"
-    when: Name == "Abilash"
+    when: NAME == "Abilash"
