@@ -9,11 +9,11 @@
       prompt: what is your name?
       private: true
   tasks:
-  - name: calling vars from task
+    - name: calling vars from task
       vars: 
         name: abilash_task
 
-  - name: Output of the variable file is 
-    ansible.builtin.debug:
-      msg: "Output : {{name}}"
+    - name: Output of the variable file is 
+      ansible.builtin.debug:
+        msg: "Output : {{name}}"
   
