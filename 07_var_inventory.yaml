@@ -1,6 +1,6 @@
-- name: Get variable from inventory
+- name: This playbook is to call the varibales from inventory
   hosts: mongodb
   tasks:
-  - name: print mongodb username
+  - name: calling variable from inventory
     ansible.builtin.debug:
-      msg: "Course is: {{USERNAME}}"
+      msg: "course is :{{USERNAME}}"
