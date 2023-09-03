@@ -9,3 +9,6 @@
   - name: print the user output
     ansible.builtin.debug:
       msg: "Output is: {{user_output}}" 
+  - name: print rc status
+    ansible.bulitin.debug:
+      msg: "Print RC status:{{user_output.rc}}"
