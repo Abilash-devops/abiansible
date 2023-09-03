@@ -3,7 +3,7 @@
   tasks:
   - name: print country names
     ansible.builtin.debug:
-      msg: "Hi {{items}}"
+      msg: "Hi {{item}}"
     loop:
     - America
     - India
