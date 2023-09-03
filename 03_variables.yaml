@@ -1,0 +1,13 @@
+- name: Learning variables in ansible
+  hosts: mongodb
+  vars:
+    NAME: Abilash
+    COURSE: Devops
+    CLOUD: AWS
+  tasks:
+    - name: print hello world
+      ansible.builtin.debug:
+        msg: "Hello guys, I'm learning new course"
+    - name: print variables
+      ansible.builtin.debug:
+        msg: "Hello guys, I'm {{NAME}}, and learning {{COURSE}}, with {{CLOUD}}" 
