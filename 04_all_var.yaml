@@ -14,3 +14,11 @@
     #   name: abilash_task   
     # ansible.builtin.debug:
     #   msg: "name is : {{name}}"
+
+
+# 1. Declare the var in playbook -> 3
+# 2. Decalre the var in file -> 4
+# 3. declare the var in prompt level -> 5
+# 4. declare the var in task level -> 2 
+# 5. declare the var in inventory level -> 6
+# 6. declare the var in command line level -> 1
