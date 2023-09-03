@@ -5,10 +5,10 @@
     ansible.builtin.command: id roboshop
     register: user_output
     ignore_errors: true
-    
+
   - name: print the user output
     ansible.builtin.debug:
-      msg: "Output is {{user_output}}" 
+      msg: "Output is: {{user_output}}" 
   - name: print rc status
     ansible.bulitin.debug:
       msg: "{{user_output.rc}}"
