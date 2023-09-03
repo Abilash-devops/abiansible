@@ -1,0 +1,13 @@
+- name: Install and uninstall using loop
+  hosts: mongodb
+  become: yes
+  tasks:
+  - name: Install/Uninstall packages
+    ansible.builtin.yum:
+      name: "{{item.name}}"
+      state: "{{item.state}}"
+    loop:
+    - {name: 'nginx', state: 'absent'}
+    - {name: 'tomcat', state: 'absent'}
+    - {name: 'postfix', state: 'absent'}
+    - {name: 'mailx', state: 'installed'}
