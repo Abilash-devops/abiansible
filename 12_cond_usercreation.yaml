@@ -3,12 +3,12 @@
   tasks:
   - name: check roboshop user exist or not
     ansible.builtin.command: id roboshop
-    register: user_output
+    register: output
     ignore_errors: true
 
   - name: print the user output
     ansible.builtin.debug:
-      msg: "Output is: '{{user_output}}'" 
+      msg: "Output is: {{output}}" 
   - name: print rc status
     ansible.bulitin.debug:
-      msg: "Print RC status:{{user_output.rc}}"
+      msg: "Print RC status:{{output.rc}}"
