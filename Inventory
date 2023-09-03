@@ -1,2 +1,5 @@
 [mongodb]
 mongodb.abilashhareendran.in
+
+[mongodb:vars]
+name=abilash_inventory
