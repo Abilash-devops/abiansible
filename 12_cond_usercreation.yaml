@@ -10,5 +10,5 @@
     ansible.builtin.debug:
       msg: "Output is: {{output}}" 
   - name: print rc status
-    ansible.bulitin.debug:
+    ansible.builtin.debug:
       msg: "Print RC status:{{output.rc}}"
