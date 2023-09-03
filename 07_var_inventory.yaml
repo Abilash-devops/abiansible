@@ -3,4 +3,4 @@
   tasks:
   - name: print mongodb username
     ansible.builtin.debug:
-      msg: "{{USERNAME}}"
+      msg: "Course is: {{USERNAME}}"
