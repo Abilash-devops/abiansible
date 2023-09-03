@@ -9,7 +9,8 @@
     prompt: What is your input?
     private: false
   tasks: 
-  - vars:
+  - name: This task is to call the varaibles
+    vars:
       name: abilash_task
   - name: This is for Output    
     ansible.builtin.debug:
