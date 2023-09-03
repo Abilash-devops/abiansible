@@ -5,14 +5,14 @@
   vars_files:
   - variables.yaml
   vars_prompt:
-    - name: name
-      prompt: what is your name?
-      private: true
+  - name: name
+    prompt: what is your name?
+    private: true
   tasks:
   - name: calling vars from task
-      vars: 
-        name: abilash_task
-
+    vars: 
+      name: abilash_task
+      
   - name: Output of the variable file is 
     ansible.builtin.debug:
       msg: "Output : {{name}}"
