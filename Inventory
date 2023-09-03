@@ -3,3 +3,4 @@ mongodb.abilashhareendran.in
 
 [mongodb:vars]
 username=abilash_inventory
+MONGODB=admin_account
