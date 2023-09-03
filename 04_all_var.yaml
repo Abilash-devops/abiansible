@@ -12,5 +12,5 @@
   - name: This task is to call the varaibles
     # vars:
     #   name: abilash_task   
-    ansible.builtin.debug:
-      msg: "name is : {{name}}"
+    # ansible.builtin.debug:
+    #   msg: "name is : {{name}}"
