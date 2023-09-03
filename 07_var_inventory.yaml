@@ -3,4 +3,4 @@
   tasks:
   - name: calling variable from inventory
     ansible.builtin.debug:
-      msg: "course is :{{USERNAME}}"
+      msg: "username is :{{USERNAME}}"
