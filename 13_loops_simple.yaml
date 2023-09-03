@@ -1,0 +1,10 @@
+- name : simple loop
+  hosts: localhost
+  tasks:
+    - name: print country names
+    ansible.builtin.debug:
+    msg: "Hi {{items}}"
+  loop:
+  - America
+  - India
+  - China
