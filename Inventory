@@ -1,5 +1,5 @@
 [mongodb]
-mongodb.abilashhareendran.in
+172.31.33.130
 
 [mongodb:vars]
 username=abilash_inventory
