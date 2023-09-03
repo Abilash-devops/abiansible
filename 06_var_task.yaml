@@ -1,0 +1,15 @@
+- name: Variable in task level
+  hosts: localhost
+  vars:
+    - father: abilash
+      mother: divya
+  tasks:
+  - name: Inherit values from play
+    ansible.builtin.debug:
+      msg: "Father name is {{father}}, Mother name is {{mother}}"
+  - name: Inherit values from play and tasks
+    vars:
+      - child: yuktha
+    ansible.builtin.debug:
+      msg: "Father name is {{father}}, Mother name is {{mother}}, Child name is {{child}}"
+      
