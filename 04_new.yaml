@@ -1,5 +1,5 @@
 - name : This playbook is to call the varibales from all 
-  hosts: dm2
+  hosts: mongodb
   vars:
     course: devops-play
   vars_files:
