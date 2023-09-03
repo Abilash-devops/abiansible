@@ -1,5 +1,5 @@
 - name: Learning variables in ansible
-  hosts: mongodb
+  hosts: localhost
   vars:
     NAME: Abilash
     COURSE: Devops
