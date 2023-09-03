@@ -1,0 +1,30 @@
+- name: List of date types # 1. String, Number, Boolean, List & Maps
+  hosts: localhost
+  vars:
+  - AGE: 33
+    NAME: Abilash
+    BASIS: true
+    SKILLS:
+      - Basis
+        HANA
+        AWS
+    EXPERIENCE:
+      - Basis: 10
+        HANA: 8
+        AWS: 1
+  tasks:
+  - name: print age datatype
+    ansible.builtin.debug:
+      msg: "Age is {{AGE}}"
+  - name: print name datatype
+    ansible.builtin.debug:
+      msg: "name is {{NAME}}"
+  - name: print boolean datatype
+    ansible.builtin.debug:
+      msg: "Basis is {{BASIS}}"
+  - name: print List datatype
+    ansible.builtin.debug:
+      msg: "Knowledge in {{SKILLS}}"
+  - name: print Maps datatype
+    ansible.builtin.debug:
+      msg: "Number of {{EXPERIENCE}}"
